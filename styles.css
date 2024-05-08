@@ -1,0 +1,60 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #930c0c;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.main-content {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.frontend-section,
+.backend-section {
+    flex-basis: 45%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f8d7d7;
+}
+
+.quiz {
+    text-align: center;
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #8d5555;
+}
+
+footer {
+    background-color: #930c0c;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.frontend-section:hover,
+.backend-section:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+
+.hidden-info {
+    display: none;
+}
+
+.frontend-section.clicked .hidden-info,
+.backend-section.clicked .hidden-info {
+    display: block;
+}
+
